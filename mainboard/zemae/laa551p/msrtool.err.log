@@ -1,0 +1,7 @@
+msrtool: option requires an argument -- 't'
+msrtool 4.13-2914-gcbd675173c
+Detected system linux: Linux with /dev/cpu/*/msr
+
+Unable to detect a known target; can not decode any MSRs! (Use -t to force)
+Please send a report or patch to coreboot@coreboot.org. Thanks for your help!
+

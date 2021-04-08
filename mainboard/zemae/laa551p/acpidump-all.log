@@ -1,0 +1,57 @@
+Processing table "SSDT" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "MCFG" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping MCFG because it was not dumped correctly.
+
+Processing table "APIC" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping APIC because it was not dumped correctly.
+
+Processing table "CRAT" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping CRAT because it was not dumped correctly.
+
+Processing table "SLIC" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping SLIC because it was not dumped correctly.
+
+Processing table "SSDT" at 0x0000000000000000 ... 1 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "VFCT" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping VFCT because it was not dumped correctly.
+
+Processing table "DSDT" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping DSDT because it was not dumped correctly.
+
+Processing table "SSDT" at 0x0000000000000000 ... 2 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "SSDT" at 0x0000000000000000 ... 3 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "SSDT" at 0x0000000000000000 ... 4 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "FACP" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping FACP because it was not dumped correctly.
+
+Processing table "FPDT" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping FPDT because it was not dumped correctly.
+
+Processing table "SSDT" at 0x0000000000000000 ... 5 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "SSDT" at 0x0000000000000000 ... 6 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "HPET" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping HPET because it was not dumped correctly.
+
+Processing table "SSDT" at 0x0000000000000000 ... 7 tables of that kind found before.
+Skipping SSDT because it was not dumped correctly.
+
+Processing table "FACS" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping FACS because it was not dumped correctly.
+
+Processing table "BGRT" at 0x0000000000000000 ... 0 tables of that kind found before.
+Skipping BGRT because it was not dumped correctly.
+

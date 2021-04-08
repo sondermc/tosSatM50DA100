@@ -1,0 +1,501 @@
+localhost.localdomain
+    description: Notebook
+    product: SATELLITE M50D-A (PSKPSE)
+    vendor: TOSHIBA
+    version: PSKPSE-00600KDU
+    serial: 8D033117K
+    width: 64 bits
+    capabilities: smbios-2.7 dmi-2.7 smp vsyscall32
+    configuration: boot=normal chassis=notebook family=* sku=PSKPSE uuid=70B9376F-0646-11E3-A5B7-201A0608E0D2
+  *-core
+       description: Motherboard
+       product: ZEMAE
+       vendor: TOSHIBA
+       physical id: 0
+       version: 1.00
+       serial: *
+       slot: *
+     *-firmware
+          description: BIOS
+          vendor: TOSHIBA
+          physical id: 0
+          version: 1.40
+          date: 06/30/2014
+          size: 64KiB
+          capacity: 1MiB
+          capabilities: pci upgrade shadowing cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer acpi usb biosbootspecification uefi
+     *-memory
+          description: System Memory
+          physical id: 14
+          slot: System board or motherboard
+          size: 8GiB
+        *-bank:0
+             description: SODIMM DDR3 Synchronous Unbuffered (Unregistered) 1333 MHz (0.8 ns)
+             product: KX830D-ELC
+             vendor: Kingston
+             physical id: 0
+             serial: 6C1A2F77
+             slot: DIMM 0
+             size: 4GiB
+             width: 64 bits
+             clock: 1333MHz (0.8ns)
+        *-bank:1
+             description: SODIMM DDR3 Synchronous Unbuffered (Unregistered) 1333 MHz (0.8 ns)
+             product: KX830D-ELC
+             vendor: Kingston
+             physical id: 1
+             serial: 6A1A2F77
+             slot: DIMM 1
+             size: 4GiB
+             width: 64 bits
+             clock: 1333MHz (0.8ns)
+     *-cache:0
+          description: L1 cache
+          physical id: 1a
+          slot: L1 CACHE
+          size: 256KiB
+          capacity: 256KiB
+          clock: 1GHz (1.0ns)
+          capabilities: pipeline-burst internal write-back unified
+          configuration: level=1
+     *-cache:1
+          description: L2 cache
+          physical id: 1b
+          slot: L2 CACHE
+          size: 2MiB
+          capacity: 2MiB
+          clock: 1GHz (1.0ns)
+          capabilities: pipeline-burst internal write-back unified
+          configuration: level=2
+     *-cpu
+          description: CPU
+          product: AMD A4-5000 APU with Radeon(TM) HD Graphics
+          vendor: Advanced Micro Devices [AMD]
+          physical id: 1c
+          bus info: cpu@0
+          version: AMD A4-5000 APU with Radeon(TM) HD Graphics
+          slot: P0
+          size: 1497MHz
+          capacity: 1500MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp x86-64 constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt topoext perfctr_nb bpext perfctr_llc hw_pstate proc_feedback ssbd vmmcall bmi1 xsaveopt arat npt lbrv svm_lock nrip_save tsc_scale flushbyasid decodeassists pausefilter pfthreshold overflow_recov cpufreq
+          configuration: cores=4 enabledcores=4 threads=4
+     *-pci:0
+          description: Host bridge
+          product: Family 16h Processor Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-display
+             description: VGA compatible controller
+             product: Kabini [Radeon HD 8330]
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm pciexpress msi vga_controller bus_master cap_list rom
+             configuration: driver=radeon latency=0
+             resources: irq:37 memory:c0000000-cfffffff memory:d0000000-d07fffff ioport:f000(size=256) memory:feb00000-feb3ffff memory:c0000-dffff
+        *-multimedia:0
+             description: Audio device
+             product: Kabini HDMI/DP Audio
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm pciexpress msi bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:39 memory:feb64000-feb67fff
+        *-pci:0
+             description: PCI bridge
+             product: Family 16h Processor Functions 5:1
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 2.3
+             bus info: pci@0000:00:02.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pm pciexpress msi ht normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:25 ioport:e000(size=4096) memory:fea00000-feafffff ioport:d0800000(size=1048576)
+           *-network
+                description: Ethernet interface
+                product: RTL810xE PCI Express Fast Ethernet controller
+                vendor: Realtek Semiconductor Co., Ltd.
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                logical name: enp1s0
+                version: 07
+                serial: 20:1a:06:08:e0:d2
+                capacity: 100Mbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress msix vpd bus_master cap_list ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=r8169 driverversion=5.11.10-200.fc33.x86_64 firmware=rtl8106e-1_0.0.1 06/29/12 latency=0 link=no multicast=yes port=MII
+                resources: irq:34 ioport:e000(size=256) memory:fea00000-fea00fff memory:d0800000-d0803fff
+        *-pci:1
+             description: PCI bridge
+             product: Family 16h Processor Functions 5:1
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 2.4
+             bus info: pci@0000:00:02.4
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pm pciexpress msi ht normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:27 memory:fe900000-fe9fffff
+           *-network
+                description: Wireless interface
+                product: QCA9565 / AR9565 Wireless Network Adapter
+                vendor: Qualcomm Atheros
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: wlp2s0
+                version: 01
+                serial: 48:d2:24:18:50:ca
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list rom ethernet physical wireless
+                configuration: broadcast=yes driver=ath9k driverversion=5.11.10-200.fc33.x86_64 firmware=N/A ip=10.0.146.136 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+                resources: irq:40 memory:fe900000-fe97ffff memory:fe980000-fe98ffff
+        *-usb:0
+             description: USB controller
+             product: FCH USB XHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 10
+             bus info: pci@0000:00:10.0
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi msix pciexpress xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:18 memory:feb68000-feb69fff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 5.11.10-200.fc33.x86_64 xhci-hcd
+                physical id: 0
+                bus info: usb@5
+                logical name: usb5
+                version: 5.11
+                capabilities: usb-2.00
+                configuration: driver=hub slots=2 speed=480Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 5.11.10-200.fc33.x86_64 xhci-hcd
+                physical id: 1
+                bus info: usb@6
+                logical name: usb6
+                version: 5.11
+                capabilities: usb-3.00
+                configuration: driver=hub slots=2 speed=5000Mbit/s
+        *-sata
+             description: SATA controller
+             product: FCH SATA Controller [AHCI mode]
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 11
+             bus info: pci@0000:00:11.0
+             logical name: scsi0
+             version: 40
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata pm msi ahci_1.0 bus_master cap_list emulated
+             configuration: driver=ahci latency=32
+             resources: irq:28 ioport:f140(size=8) ioport:f130(size=4) ioport:f120(size=8) ioport:f110(size=4) ioport:f100(size=16) memory:feb6e000-feb6e3ff
+           *-disk
+                description: ATA Disk
+                product: KINGSTON SV300S3
+                physical id: 0.0.0
+                bus info: scsi@0:0.0.0
+                logical name: /dev/sda
+                version: BBF0
+                serial: 50026B774501542E
+                size: 55GiB (60GB)
+                capabilities: gpt-1.00 partitioned partitioned:gpt
+                configuration: ansiversion=5 guid=625152f6-c03c-4404-ab8f-bd6656bf2c4f logicalsectorsize=512 sectorsize=512
+              *-volume:0 UNCLAIMED
+                   description: Windows FAT volume
+                   vendor: MSDOS5.0
+                   physical id: 1
+                   bus info: scsi@0:0.0.0,1
+                   version: FAT32
+                   serial: 84cf-5d7b
+                   size: 255MiB
+                   capacity: 511MiB
+                   capabilities: boot fat initialized
+                   configuration: FATs=2 filesystem=fat name=EFI System Partition
+              *-volume:1
+                   description: EXT4 volume
+                   vendor: Linux
+                   physical id: 2
+                   bus info: scsi@0:0.0.0,2
+                   logical name: /dev/sda2
+                   logical name: /boot
+                   version: 1.0
+                   serial: e0a19348-9f48-4dc2-88e1-8b5c90ab0f58
+                   size: 1GiB
+                   capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                   configuration: created=2021-03-29 22:39:37 filesystem=ext4 lastmountpoint=/boot modified=2021-03-30 07:41:13 mount.fstype=ext4 mount.options=rw,seclabel,relatime mounted=2021-03-30 07:41:13 state=mounted
+              *-volume:2
+                   description: EFI partition
+                   physical id: 3
+                   bus info: scsi@0:0.0.0,3
+                   logical name: /dev/sda3
+                   logical name: /
+                   logical name: /home
+                   serial: e78b4fc0-3f82-480f-820a-12f4c68e2d4d
+                   capacity: 54GiB
+                   configuration: mount.fstype=btrfs mount.options=rw,seclabel,relatime,ssd,space_cache,subvolid=257,subvol=/home state=mounted
+        *-usb:1
+             description: USB controller
+             product: FCH USB OHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 12
+             bus info: pci@0000:00:12.0
+             version: 39
+             width: 32 bits
+             clock: 66MHz
+             capabilities: ohci bus_master
+             configuration: driver=ohci-pci latency=32
+             resources: irq:18 memory:feb6d000-feb6dfff
+           *-usbhost
+                product: OHCI PCI host controller
+                vendor: Linux 5.11.10-200.fc33.x86_64 ohci_hcd
+                physical id: 1
+                bus info: usb@3
+                logical name: usb3
+                version: 5.11
+                capabilities: usb-1.10
+                configuration: driver=hub slots=4 speed=12Mbit/s
+              *-usb
+                   description: Bluetooth wireless interface
+                   vendor: Toshiba Corp.
+                   physical id: 2
+                   bus info: usb@3:2
+                   version: 0.02
+                   capabilities: bluetooth usb-1.10
+                   configuration: driver=btusb maxpower=100mA speed=12Mbit/s
+        *-usb:2
+             description: USB controller
+             product: FCH USB EHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 12.2
+             bus info: pci@0000:00:12.2
+             version: 39
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=32
+             resources: irq:17 memory:feb6c000-feb6c0ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 5.11.10-200.fc33.x86_64 ehci_hcd
+                physical id: 1
+                bus info: usb@1
+                logical name: usb1
+                version: 5.11
+                capabilities: usb-2.00
+                configuration: driver=hub slots=4 speed=480Mbit/s
+              *-usb
+                   description: Video
+                   product: TOSHIBA Web Camera - HD
+                   vendor: CE9D4Q2T9
+                   physical id: 4
+                   bus info: usb@1:4
+                   version: 0.12
+                   serial: 200901010001
+                   capabilities: usb-2.00
+                   configuration: driver=uvcvideo maxpower=500mA speed=480Mbit/s
+        *-usb:3
+             description: USB controller
+             product: FCH USB OHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 13
+             bus info: pci@0000:00:13.0
+             version: 39
+             width: 32 bits
+             clock: 66MHz
+             capabilities: ohci bus_master
+             configuration: driver=ohci-pci latency=32
+             resources: irq:18 memory:feb6b000-feb6bfff
+           *-usbhost
+                product: OHCI PCI host controller
+                vendor: Linux 5.11.10-200.fc33.x86_64 ohci_hcd
+                physical id: 1
+                bus info: usb@4
+                logical name: usb4
+                version: 5.11
+                capabilities: usb-1.10
+                configuration: driver=hub slots=4 speed=12Mbit/s
+        *-usb:4
+             description: USB controller
+             product: FCH USB EHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 13.2
+             bus info: pci@0000:00:13.2
+             version: 39
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=32
+             resources: irq:17 memory:feb6a000-feb6a0ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 5.11.10-200.fc33.x86_64 ehci_hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 5.11
+                capabilities: usb-2.00
+                configuration: driver=hub slots=4 speed=480Mbit/s
+        *-serial
+             description: SMBus
+             product: FCH SMBus Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 3a
+             width: 32 bits
+             clock: 66MHz
+             configuration: driver=piix4_smbus latency=0
+             resources: irq:0
+        *-multimedia:1
+             description: Audio device
+             product: FCH Azalia Controller
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 02
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=snd_hda_intel latency=32
+             resources: irq:16 memory:feb60000-feb63fff
+        *-isa
+             description: ISA bridge
+             product: FCH LPC Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD]
+             physical id: 14.3
+             bus info: pci@0000:00:14.3
+             version: 11
+             width: 32 bits
+             clock: 66MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+     *-pci:1
+          description: Host bridge
+          product: Family 16h Processor Function 0
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 101
+          bus info: pci@0000:00:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:2
+          description: Host bridge
+          product: Family 16h Processor Function 0
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 102
+          bus info: pci@0000:00:18.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:3
+          description: Host bridge
+          product: Family 16h Processor Function 1
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 103
+          bus info: pci@0000:00:18.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:4
+          description: Host bridge
+          product: Family 16h Processor Function 2
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 104
+          bus info: pci@0000:00:18.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:5
+          description: Host bridge
+          product: Family 16h Processor Function 3
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 105
+          bus info: pci@0000:00:18.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=k10temp
+          resources: irq:0
+     *-pci:6
+          description: Host bridge
+          product: Family 16h Processor Function 4
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 106
+          bus info: pci@0000:00:18.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=fam15h_power
+          resources: irq:0
+     *-pci:7
+          description: Host bridge
+          product: Family 16h Processor Function 5
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 107
+          bus info: pci@0000:00:18.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pnp00:00
+          product: PnP device PNP0c01
+          physical id: 1
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:01
+          product: PnP device PNP0c02
+          physical id: 2
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:02
+          product: PnP device PNP0c02
+          physical id: 3
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:03
+          product: PnP device PNP0b00
+          physical id: 4
+          capabilities: pnp
+          configuration: driver=rtc_cmos
+     *-pnp00:04
+          product: PnP device PNP0c02
+          physical id: 5
+          capabilities: pnp
+          configuration: driver=system
+     *-pnp00:05
+          product: PnP device ETD0804
+          vendor: ELAN MICROELECTRONICS CORPORATION
+          physical id: 6
+          capabilities: pnp
+          configuration: driver=i8042 aux
+     *-pnp00:06
+          product: PnP device TOS1106
+          vendor: Dynabook Inc.
+          physical id: 7
+          capabilities: pnp
+          configuration: driver=i8042 kbd
+     *-pnp00:07
+          product: PnP device PNP0c02
+          physical id: 8
+          capabilities: pnp
+          configuration: driver=system
